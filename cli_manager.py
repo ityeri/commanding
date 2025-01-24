@@ -18,7 +18,7 @@ class CLIManager:
             cls._instance = super().__new__(cls)
         return cls._instance
 
-    def __init__(self, prefix: str, logginLevel: int = logging.DEBUG):
+    def __init__(self, prefix: str="> ", logginLevel: int = logging.DEBUG):
 
         self.logger = logging.getLogger()
         self.logger.setLevel(level=logginLevel)
